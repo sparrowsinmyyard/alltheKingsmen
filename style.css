@@ -239,13 +239,19 @@ body {
 }
 
   .desc-flex {
+  padding: 0 1rem;
+  text-align: center;
   margin: 0 auto;
   max-width: 100%;
 }
 
 .sidebar h1 {
+  text-align: center;
   font-size: 2rem;
 }
+  .sidebar p{
+    text-align: center;
+  }
 
   .content {
     width: 100%;
