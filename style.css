@@ -231,6 +231,10 @@ body {
   }
 
 .sidebar {
+  width: 100%;
+  position: relative;
+}
+  .sidebar::after {
   display: none;
 }
 
