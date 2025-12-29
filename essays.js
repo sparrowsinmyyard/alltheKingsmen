@@ -12,10 +12,10 @@ const essays = [
     file: "glaz.html"
   },
   {
-    title: "Third Piece",
-    preview: "Another fragment, unfinished but necessary.",
-    date: "2024-12-28",
-    file: "third.html"
+    title: "A Prayer to the Imperfect",
+    preview: "a movie review? or a question for the omnipotent? why not both? in this piece i try to analyse the movie 'Frankenstein' through a lens that hit me in the second arc of the movie. its serene, honestly.",
+    date: "2025-12-29",
+    file: "prayer.html"
   },
   {
     title: "Fourth Piece",
