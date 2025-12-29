@@ -234,6 +234,9 @@ body {
   width: 100%;
   position: relative;
   margin: 0 auto;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-bottom: 20px;
 }
   .sidebar::after {
   display: none;
