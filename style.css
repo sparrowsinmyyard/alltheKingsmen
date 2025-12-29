@@ -232,6 +232,7 @@ body {
   .sidebar {
     width: 100%;
     position: relative;
+    margin-left: 0;
   }
 
   .content {
