@@ -227,13 +227,21 @@ body {
 @media (max-width: 800px) {
   .layout {
     flex-direction: column;
+    text-align: center;
   }
 
-  .sidebar {
-    width: 100%;
-    position: relative;
-    margin-left: 0;
-  }
+.sidebar {
+  display: none;
+}
+
+  .desc-flex {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.sidebar h1 {
+  font-size: 2rem;
+}
 
   .content {
     width: 100%;
