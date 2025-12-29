@@ -233,6 +233,7 @@ body {
 .sidebar {
   width: 100%;
   position: relative;
+  margin: 0 auto;
 }
   .sidebar::after {
   display: none;
