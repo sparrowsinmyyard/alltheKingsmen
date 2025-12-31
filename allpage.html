@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>complete essay collection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- shared styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- fonts (same as rest of site) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Libre+Baskerville:wght@400&family=Spectral:wght@400&display=swap" rel="stylesheet">
+
+  <style>
+    /* page wrapper */
+    .allpage {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .allpage h1 {
+      font-family: "Libre Baskerville", serif;
+      font-size: 2.2rem;
+      margin-bottom: 3rem;
+      text-align: left;
+    }
+
+    /* grid layout */
+    .essay-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    /* individual cards */
+    .essay-card {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 1.2rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: transparent;
+    }
+
+    .essay-card:hover {
+      transform: translateY(-6px);
+      border-color: #1a1a1a;
+    }
+
+    .essay-card h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.2rem;
+      margin: 0 0 0.6rem 0;
+    }
+
+    .essay-card p {
+      font-family: "Spectral", serif;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      opacity: 0.75;
+
+      /* clamp preview text */
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* responsive */
+    @media (max-width: 1000px) {
+      .essay-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .essay-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .allpage h1 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="allpage">
+    <h1>complete essay collection</h1>
+
+    <div class="essay-grid" id="all-essays"></div>
+  </div>
+
+  <!-- data source -->
+  <script src="essays.js"></script>
+
+  <!-- page logic -->
+  <script>
+    const container = document.getElementById("all-essays");
+
+    essays
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .forEach(essay => {
+        const card = document.createElement("div");
+        card.className = "essay-card";
+
+        card.innerHTML = `
+          <h2>${essay.title}</h2>
+          <p>${essay.preview}</p>
+        `;
+
+        card.addEventListener("click", () => {
+          window.location.href = essay.file;
+        });
+
+        container.appendChild(card);
+      });
+  </script>
+
+</body>
+</html>
