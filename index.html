@@ -70,10 +70,22 @@
         <h3>Subscribe</h3>
         <p>Get a quiet note when something new appears.</p>
 
-        <div class="subscribe-row">
-          <input type="email" placeholder="your email">
-          <button >subscribe</button>
-        </div>
+<form
+  action="https://buttondown.email/api/emails/embed-subscribe/sparrows"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/sparrows', 'popupwindow')"
+  class="subscribe-row"
+>
+  <input
+    type="email"
+    name="email"
+    placeholder="your email"
+    required
+  >
+  <button type="submit">subscribe</button>
+</form>
+
       </div>
 
     </div>
