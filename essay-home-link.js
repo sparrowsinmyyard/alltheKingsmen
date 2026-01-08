@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // styling (kept minimal + unobtrusive)
   link.style.position = "fixed";
-  link.style.top = "1rem";
-  link.style.left = "1rem";
+  link.style.top = "1.5rem";
+  link.style.left = "1.5rem";
   link.style.fontFamily = "Libre Baskerville, serif";
-  link.style.fontSize = "2rem";
+  link.style.fontSize = "1.2rem";
   link.style.opacity = "0.6";
-  link.style.color = "#1a1a1a";          // NOT blue geez
+  link.style.color = "#0a0a0a";          // NOT blue geez
   link.style.textDecoration = "none";
   link.style.zIndex = "1000";
 
