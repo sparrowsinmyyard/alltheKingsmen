@@ -8,20 +8,19 @@ document.addEventListener("DOMContentLoaded", () => {
   link.style.top = "1rem";
   link.style.left = "1rem";
   link.style.fontFamily = "Libre Baskerville, serif";
-  link.style.fontSize = "0.9rem";
+  link.style.fontSize = "2rem";
   link.style.opacity = "0.6";
+  link.style.color = "#1a1a1a";          // NOT blue geez
   link.style.textDecoration = "none";
   link.style.zIndex = "1000";
 
   // hover behavior
   link.addEventListener("mouseenter", () => {
     link.style.opacity = "0.9";
-    link.style.textDecoration = "underline";
   });
 
   link.addEventListener("mouseleave", () => {
     link.style.opacity = "0.6";
-    link.style.textDecoration = "none";
   });
 
   document.body.appendChild(link);
