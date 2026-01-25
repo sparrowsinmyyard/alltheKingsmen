@@ -18,21 +18,9 @@ const essays = [
     file: "prayer.html"
   },
   {
-    title: "Fourth Piece",
-    preview: "Notes written late, meant to be read slowly.",
-    date: "2024-12-20",
-    file: "fourth.html"
-  },
-  {
-    title: "Fifth Piece",
-    preview: "A short reflection that didn’t want to be long.",
-    date: "2024-12-10",
-    file: "fifth.html"
-  },
-  {
-    title: "Sixth Piece",
-    preview: "This one will never show on the homepage.",
-    date: "2024-12-01",
-    file: "sixth.html"
-  }
+  title: "At the Altar I Fray",
+  preview: "a debut for God on this website. he won't talk though; it is a one sided conversation with God about our relationship and exhaustion, offering a new perspective on faith itself.",
+  date: "2025-01-25",
+  file: "fraying-at-the-altar.html"
+},
 ];
