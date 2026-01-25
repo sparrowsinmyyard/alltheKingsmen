@@ -20,7 +20,7 @@ const essays = [
   {
   title: "At the Altar I Fray",
   preview: "a debut for God on this website. he won't talk though; it is a one sided conversation with God about our relationship and exhaustion, offering a new perspective on faith itself.",
-  date: "2025-01-25",
+  date: "2026-01-25",
   file: "fraying.html"
 },
 ];
